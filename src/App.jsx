@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import Contacts from "./components/Contacts.jsx";
 import Footer from "./components/Footer.jsx";
+
 const App = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 antialiased">

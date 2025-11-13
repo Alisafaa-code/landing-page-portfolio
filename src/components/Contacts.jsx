@@ -1,4 +1,8 @@
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
 const Contacts = () => {
+  const [sectionRef, sectionVisible] = useScrollAnimation({ threshold: 0.2 });
+
   const socials = {
     id: "whatsapp",
     label: "WhatsApp",
@@ -6,7 +10,15 @@ const Contacts = () => {
   };
 
   return (
-    <section id="contact" className="max-w-3xl mx-auto px-6 py-12">
+    <section
+      ref={sectionRef}
+      id="contact"
+      className={`max-w-3xl mx-auto px-6 py-12 transition-all duration-1000 ${
+        sectionVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-10"
+      }`}
+    >
       <h3 className="text-2xl font-bold text-center">تواصل معنا</h3>
       <p className="text-gray-500 text-center mt-2">
         اكتب لنا وسنعاود التواصل خلال أقرب وقت.
