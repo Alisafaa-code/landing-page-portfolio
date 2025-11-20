@@ -5,6 +5,10 @@
   text-align: right;
 }
 
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
 /* Hero Animations */
 @keyframes blob {
   0% {

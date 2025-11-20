@@ -12,18 +12,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white/80 backdrop-blur sticky top-0 z-40 border-b">
+    <header className="bg-white/80 backdrop-blur sticky top-0 z-40">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div
-            className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold"
-            style={{ background: "linear-gradient(135deg,#6366f1,#ec4899)" }}
-          >
-            {brandName.charAt(0)}
-          </div>
           <div>
             <h1 className="text-lg font-semibold">{brandName}</h1>
-            <p className="text-xs text-gray-500">حلول رقمية — تصميم وبرمجة</p>
           </div>
         </div>
 

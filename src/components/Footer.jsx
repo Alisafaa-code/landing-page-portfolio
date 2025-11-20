@@ -86,10 +86,10 @@ const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
-      </div>
+      </div> */}
 
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Main Footer Content */}
